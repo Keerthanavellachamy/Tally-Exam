@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AURA SmartExam - Faculty</title><link rel="icon" href="logo_aura.jpeg"><link rel="stylesheet" href="style.css"></head>
+<body data-view="fac">
+<header><div class="brand"><div class="logo"><img src="logo_aura.jpeg" alt="AURA Institute &amp; Technology logo"></div><div><span class="gt">AURA SmartExam</span><small>Faculty Portal</small></div></div><div class="sp"></div>
+<a class="btn ghost sm" href="index.html" style="text-decoration:none">Student Site</a><button class="btn ghost sm" id="logout" hidden>Logout</button><button class="tbtn" id="themeBtn" type="button"></button></header>
+<main id="fac">
+<section id="flogin" class="view on"><div class="wrap"><div class="card" style="max-width:420px;margin:30px auto"><h2 class="gt">Faculty Login</h2>
+<form id="fForm" novalidate><label class="f" for="fu">Username</label><input class="in" id="fu" autocomplete="off"><label class="f" for="fp">Password</label><input class="in" id="fp" type="password">
+<div class="err" id="ferr" role="alert"></div><button class="btn" style="width:100%">Login</button></form>
+<div class="note">Demo only: username <b>faculty</b>, password <b>aura@123</b>. This is not real security.</div></div></div></section>
+<section id="fdash" class="view"><div class="wrap"><h2 class="gt" style="margin-bottom:14px">Dashboard Overview</h2>
+<div class="stats" id="stats"></div>
+<div class="card"><h3>Submitted Examination Reports</h3><div class="tw"><table><thead><tr><th>Name</th><th>Reg. No.</th><th>Submitted</th><th>Attempted</th><th>Marks</th><th>%</th><th>Actions</th></tr></thead><tbody id="rows"></tbody></table></div><p class="mu" id="empty" hidden>No submissions yet in this browser.</p></div>
+<p class="note">Reports are read from this browser's localStorage, so student and faculty pages must be opened in the same browser. Not tamper-proof.</p></div></section>
+</main>
+<div class="modal" id="vmodal" role="dialog" aria-modal="true"><div class="card" style="max-width:760px"><div id="vbody"></div><div class="row"><button class="btn ghost" id="vclose">Close</button></div></div></div>
+<script src="questions.js"></script><script src="script.js"></script></body></html>
